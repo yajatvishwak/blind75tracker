@@ -22,7 +22,7 @@
       articleSolution: [],
       tags: ["tag1", "tag2"],
       completed: false,
-      isOpen: false,
+      isOpen: true,
     },
     {
       id: 12,
@@ -36,7 +36,7 @@
       articleSolution: [],
       tags: ["tag1", "tag2"],
       completed: false,
-      isOpen: false,
+      isOpen: true,
     },
     {
       id: 13,
@@ -50,7 +50,7 @@
       articleSolution: [],
       tags: ["tag1", "tag2"],
       completed: false,
-      isOpen: false,
+      isOpen: true,
     },
   ];
   let mounted = 0;
@@ -92,9 +92,7 @@
   }
 </script>
 
-<section
-  class="p-10  bg-slate-200 mx-auto max-w-screen-lg dark:text-indigo-50 dark:bg-slate-800 "
->
+<section class="p-10 mx-auto max-w-screen-lg   dark:text-indigo-50">
   <div class="my-10 flex w-full justify-between">
     <div>
       <div class="text-4xl font-bold">Blind 75</div>
@@ -117,7 +115,7 @@
     </div>
   </div>
 
-  <div class="grid gap-5">
+  <div class="grid gap-5 overflow-auto">
     {#each questionaire as questions}
       <Card
         bind:isOpen={questions.isOpen}
@@ -140,6 +138,6 @@
   @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap");
   body {
     font-family: "Anonymous Pro", monospace;
-    @apply dark:bg-slate-800 bg-slate-200 overflow-auto;
+    @apply dark:bg-slate-800 bg-slate-200 h-full overflow-auto min-h-screen;
   }
 </style>
