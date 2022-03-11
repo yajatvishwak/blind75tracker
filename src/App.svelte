@@ -93,7 +93,7 @@
 </script>
 
 <section
-  class="p-10  bg-slate-200 mx-auto max-w-screen-lg max-h-full dark:text-indigo-50 dark:bg-slate-800 "
+  class="p-10  bg-slate-200 mx-auto max-w-screen-lg dark:text-indigo-50 dark:bg-slate-800 "
 >
   <div class="my-10 flex w-full justify-between">
     <div>
@@ -140,6 +140,6 @@
   @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap");
   body {
     font-family: "Anonymous Pro", monospace;
-    @apply dark:bg-slate-800 bg-slate-200 overflow-auto max-h-full;
+    @apply dark:bg-slate-800 bg-slate-200 overflow-auto;
   }
 </style>
