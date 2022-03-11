@@ -140,6 +140,6 @@
   @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap");
   body {
     font-family: "Anonymous Pro", monospace;
-    @apply dark:bg-slate-800 h-screen bg-slate-200 overflow-auto max-h-full;
+    @apply dark:bg-slate-800 bg-slate-200 overflow-auto max-h-full;
   }
 </style>
