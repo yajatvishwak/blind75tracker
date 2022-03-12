@@ -10,7 +10,7 @@ Track your progress on the famous Blind75 Questions from Leetcode
 - 🚀 Persistent Storage
 
 ⚠️ WIP:
-- Need to load data
+
 
 
 

@@ -1,4 +1,5 @@
 <script>
+  export let notes = "";
   export let isOpen = true;
   export let completed = false;
   export let question = "";
@@ -75,19 +76,18 @@
         <div class="underline">{questionNumber}</div>
       </div>
       <div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, atque!
-        Sunt consequatur eligendi doloremque enim quisquam ipsum earum nihil
-        deserunt libero quis dolores assumenda perspiciatis, iure alias hic
-        facilis doloribus.
+        {notes}
       </div>
       <div class="mt-3 flex flex-col">
         <div class="font-bold mb-1">Question Link</div>
-        <a href={questionLink} class="underline">{questionLink}</a>
+        <a href={questionLink} target="_blank" class="underline"
+          >{questionLink}</a
+        >
       </div>
       <div class="mt-3 flex flex-col">
         <div class="font-bold mb-1">Video Solution</div>
         {#each videoSolution as { author, link }}
-          <a href={link} class="underline">{author} - {link}</a>
+          <a href={link} target="_blank" class="underline">{author} - {link}</a>
         {/each}
       </div>
       <div class="mt-3 flex flex-col">
@@ -96,7 +96,7 @@
           nil
         {/if}
         {#each articleSolution as { author, link }}
-          <a href={link} class="underline">{author} - {link}</a>
+          <a href={link} target="_blank" class="underline">{author} - {link}</a>
         {/each}
       </div>
     </div>
